@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+This is an example weekly progress report document that team members can use to report their individual progress 
+of their ECE477 senior design projects. Weekly progress reports are expected to follow the general guidelines
+presented in the "Progress Report Policy" document, available online at https://engineering.purdue.edu/ece477/Course/Policies/policies.html
+
+Please create 4 copies of this example, renaming each copy to <PurdueID>.html, where <PurdueID> corresponds to
+the Purdue ITAP Career Account ID given by Purdue to each individual team member. If you have any questions,
+contact course staff.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--Reconfigurable base tag; used to modify the site root location for root-relative links-->
+<base href="https://engineering.purdue.edu/477grp15/" />
+
+<!--Content-->
+<title>ECE477 Course Documents</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="George Hadley">
+<meta name = "format-detection" content = "telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!--CSS-->
+<link rel="stylesheet" href="css/default.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/content.css">
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+<body>
+<div id="wrapper_site">
+    <div id="wrapper_page">
+	<!-- Instantiate global site header.-->
+	<div id="header"></div>
+		<!-- Instantiate site global navigation bar.-->
+		<div id="menu"></div>
+	
+		<!-- Instantiate a page banner image. Page banner images should be 1100x350px and should be located within the local
+			img folder located at this directory level. -->
+		<div id="banner">
+			<img src="Files/img/BannerImgExample.jpg"></img>
+		</div>
+	
+		<!-- Instantiate "tools" needed for a page. Tools are premade functional blocks that can be used to build a page,
+			and include things such as a file lister (for listing out homework assignments or tutorials)
+		-->
+		<div id="content">
+            <h2>Progress Report for Rebecca Salo</h2>
+            
+            <h4>Week 2:</h4>
+            <b>Date:</b> September 1, 2017<br>
+            <b>Total hours:</b> 10<br>
+            <b>Description of design efforts:</b><br>
+			<p>
+            The past week has been mainly focused on organizing our project and solidifying our design criteria. My first task was to determine a project management tool and set it up so we have an organized way to keep track of our tasks and labor division. After searching online, looking at several tools, and talking to peers and mentors, I decided to use Trello. Trello has a visual layout that is easy to use, includes a calendar functionality to show due dates, and interfaces well with Google, our main platform.
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/r_img/rsalo-wk2-trello.jpg"></img></p>
+			Figure 1 - Trello Main Page
+			
+			<p>
+			As a team, we have also met to discuss our project criteria, including our Project Specific Success Criteria (PSSCs). Some important discussions in which I have been involved include drafting and revision our PSSCs, choosing our method for determining how much of the spice remains in the container (weight vs. volume), and planning the physical layout of the Super Susan (how to design the mechanism so that there is only one weigh station but still allow for easy and stable movement of the bottles. We decided that weight is the more reliable method for measuring the remaining contents, and keeping the Super Susan round and as turntable-like as possible will provide the best user experience.
+			<p>
+			As the hardware engineer, I was responsible for completing the electronic constraints, thermal/power constraints, and the functional description in the functional specification report. For this, I made a list of the necessary components and surveyed common requirements of them. Immediate questions were addressed with the team, and the next steps will involve discussing each component in more detail, researching our options, and selecting parts to order.
+			
+			</br>
+
+            <br>
+			
+			<h4>Week 3:</h4>
+            <b>Date:</b> September 8, 2017<br>
+            <b>Total hours:</b> 20<br>
+            <b>Description of design efforts:</b><br>
+			<p>
+            This week, as the hardware engineer, I did a lot of research on components for the Super Susan. One of my main focuses was to find a suitable stepper motor. For this, I had to determine the torque required to rotate the turntable, which depends on the size and weight of the bottles and spices. This led to team discussions, as well as individual research, and I finally was able to estimate the upper bound of the weight as 6 kg (see Figure 3 below for calculations). I also contributed to some intial design sketches and determined that the 14"-diameter Super Susan will have a capacity of 24 bottles.
+			<p><img src="Team/progress/images/r_img/rsalo-wk3-layout.png"></img></p>
+			Figure 2 - Sketch of Top View of Super Susan
+			<p>
+			<p><img src="Team/progress/images/r_img/rsalo-wk3-torqueCalcs.png"></img></p>
+			Figure 3 - Torque Calculations for Stepper Motor
+			<p>
+			I also spent time investigating the various display options, including character LCDs, pixel LCDs, and OLEDs. The pixel LCDs and OLEDs both offer the advantages of flexible font size, and I chose a pixel LCD for the final design since the OLED did not have any significant advantages for the increase in price.</p>
+			<p>
+			</p><p>
+			My final technical research area this week was NFC. None of us have much experience with it, so I spent time researching it. NFC is a subset of high-frequency RFID, and it has advantages in that it is capable of two-way communication at short distances. I was responsible for finding and choosing a reader module, and I decided on the PN512 since it is inexpensive and designed specifically for NFC communications.
+			</p><p>
+			Through the work I did to determine the torque, I also researched spice bottle options and found some possibilities. I will explore these more this week and pick a type to order. I also participated in team discussions regarding the shape and material of the Super Susan. We realized that a round 14" cake pan would work well for our base, so I will be shopping for a cake pan this weekend.
+			</p>
+			</br>
+			
+			<h4>Week 4:</h4>
+            <b>Date:</b> September 15, 2017<br>
+            <b>Total hours:</b> 22<br>
+            <b>Description of design efforts:</b><br>
+            <p>My main task this week has been to complete the Electrical Overview. This has involved detailed examinations of the component data sheets to determine the power requirements, as well as communication with other team members to decide our interfacing protocol. To summarize this information, I created a system block diagram which includes the interfaces between all major components (see Figure 4).</p>
+			
+			<p><img src="Team/progress/images/r_img/rsalo-wk4-blockDiagram.png"></img></p>
+			Figure 4 - Electrical Overview Block Diagram
+			
+			<p>In addition to the Electrical Overview, I have spent a considerable amount of time researching stepper motors and their required circuitry. The first task was to drive a stepper motor borrowed from the senior design lab using a borrowed stepper motor driver. Using a square wave in place of a PWM signal since our microcontroller had not yet arrived, I was able to drive the motor at varying speeds based on the frequency of the input signal (see Figure 5 for setup). I then loaded the motor with first a breadboard to mimic the table of the Super Susan, and the motor was able to turn the breadboard at low speeds (see Figure 6). I also used a 3 lb textbook to test the torque closer to the expected weight for the Super Susan. The motor was able to rotate the textbook for one complete turn (see Figure 7), but after that it stopped due to exceeding the current limit. I am still investigating the cause of this and hope to find a way to continuously rotate the textbook.</p>
+			
+			<p><img src="Team/progress/images/r_img/rsalo-wk4-motorSetup.jpg"></img></p>
+			Figure 5 - Stepper Motor Test Configuration
+			<p></p>
+			<p><img src="Team/progress/images/r_img/rsalo-wk4-breadboard.jpg"></img></p>
+			Figure 6 - Rotating Breadboard
+			<p></p>
+			<p><img src="Team/progress/images/r_img/rsalo-wk4-textbook.jpg"></img></p>
+			Figure 7 - Rotating Textbook
+			<p></p>
+			
+			<p>Because the stepper motor driver we borrowed from lab is more powerful than we need, I researched stepper motor drivers and chose the L293D, which we were able to obtain from the instrument room. This is a popular H-Bridge motor controller which can supply up to 600 mA of current. Based on some of my research, I believe we may need 700 mA for our motor (current is rated at 350 mA, but it is a 2-phase motor). If that is the case, we will need to use the L293, which is an identical part that can supply up to 1 A of current.</p>
+			
+			
+			</br>
+			
+			<h4>Week 5:</h4>
+            <b>Date:</b> September 22, 2017<br>
+            <b>Total hours:</b> 14<br>
+            <b>Description of design efforts:</b><br>
+            <p>My first technical task of the week was to drive the motor using the actual motor driver I chose last week, the L293D. This required input signals from the microcontroller, so I worked with Ziad to get simple GPIO signals for the four input pins. Depending on how long we wait between signals, we are able to turn the motor at different speeds. The experiemental setup is shown below in Figure 8.
+			
+			<p><img src="Team/progress/images/r_img/rsalo-wk5-motorSetup.png"></img></p>
+			Figure 8 - Stepper Motor driven by L293D
+			
+			<p>I tested a variety of loads, and I found that the motor could still turn my 3-lb textbook when driven by the L293D. Additionally, I created a 14-inch cardboard turntable that I used to test the rotation with the weight placed towards the outside. This mimics the inertia that the Super Susan will need to overcome. The motor was successful, though currently there is a problem at low stepping speeds. It appears that the rotor pauses between equilibrium positions and sometimes reverses back to the previous equilibrium position, causing the motor to reverse directions. At higher speeds this is not a problem. I suspect that there is a better way to send the motor the input signals which will solve this problem.</p>
+			
+			<p>A number of my motor tests can be seen in this <a href="https://youtu.be/opqBNEaiXzE">video</a>.</p>
+			
+			<p>I also worked with the Hall Effect sensors this week and tested them in a metallic cookie tin. I had expected that the metal container would affect the performance of the Hall Effect sensors, but it did not. Additionally, I was able to place the magnet on one side of the container and the sensor on the other and still get a reading when the magnet was directly above the sensor. Because the metallic container does not appear to affect the accuracy of the sensors, we will be able to pursue our plan of using a cake pan as our base. We also have flexibility in the turntable surface material and could potentially use something metallic.</p>
+			
+			<p><img src="Team/progress/images/r_img/rsalo-wk5-hallWall.png"></img></p>
+			Figure 9 - The hall effect sensor could read against the cookie tin wall.
+			<p></p>
+			<p><img src="Team/progress/images/r_img/rsalo-wk5-hallOn.png"></img></p>
+			Figure 10 - Without the magnet near the sensor, the LED is still on, indicating that the Hall Effect sensor does not incorrectly identify the magnet.
+			<p></p>
+			<p><img src="Team/progress/images/r_img/rsalo-wk5-hallOff.png"></img></p>
+			Figure 11 - When the magnet is near the sensor, the LED turns off, indicating that the Hall Effect sensor detects the magnet.
+			<p></p>
+			
+			</br>
+			
+			<h4>Week 6:</h4>
+            <b>Date:</b> September 29, 2017<br>
+            <b>Total hours:</b> 10<br>
+            <b>Description of design efforts:</b><br>
+            <p>
+			This week, the progress I made was mostly in design considerations. Most of our parts have arrived, so last weekend I tested the new Hall Effect sensors. Even though the new sensors are stronger than the original sensors, they are unable to detect the strip magnet. The sensors could detect the neodymium magnets up to almost 1 inch away, but these sensors would require us to affix a neodymium magnet to each bottle. This raised concerns about the magnetic flux created by 24 magnets, so I started investigating alternative methods.</p>
+			
+			<p><img src="Team/progress/images/r_img/rsalo-wk6-hallOff.jpg"></img></p>
+			Figure 12 - LED off indicates that the Hall Effect sensor detects the neodymium magnet
+			
+			<p>
+			As I was beginning to invesitage alternative methods for detecting the presence of a bottle, conversations with teammates caused me to think more deeply about our actual need of the sensor. Since we had previously decided to save on cost and only have NFC readers in 2 locations, detecting the presence of a bottle in another location would not provide much information. The Super Susan would have to remeasure all the bottles again, so I suggested that we eliminate the Hall Effect sensors (or alternative sensors) since they would provide little additional information. This idea was accepted by the team, and our new plan is to prompt the user to request a remeasure after all the spices are returned to the Super Susan.</p>
+			
+			<p>I also spent time connecting our new motor to the H-bridge, and since our microcontroller was in use by other team members, I decided to use an STM32 microcontroller I have from a previous course. The code for the stepper motor should be identical between the two microcontrollers despite the slight difference in models. However, I encountered major challenges with the auto-generated peripheral initalizations from CubeMX when I tried to program the microcontroller from Eclipse. I spent over an hour attempting to fix the problem but was not able to resolve it. This will be one of my first goals for the weekend.</p>
+			
+			<p>As one of the hardware engineers, I have begun turning some focus towards the PCB design. This week, Cliff and I discussed the labor division for our main board, as well as our management of the part files. I have worked through the Eagle tutorial, and this week I will contribute to the schematic and PCB layout.</p>
+			
+			
+			</br>
+			
+			<h4>Week 7:</h4>
+            <b>Date:</b> October 6, 2017<br>
+            <b>Total hours:</b> 13<br>
+            <b>Description of design efforts:</b><br>
+            <p>My main priority this week has been finalizing the schematic for the PCB design. This included creating several parts for our Eagle library, including the L293 stepper motor driver and the ESP8266 Wifi module (see Figure 13).</p>
+			
+			<p><img src="Team/progress/images/r_img/rsalo-wk7-parts.jpg"></img></p>
+			Figure 13 - L293 Stepper Motor Driver and ESP8266 Wifi Module Eagle Parts
+			
+			<p>Since I have been experimenting with the stepper motor, I was responsible for desiging the circuitry for it. This including determining which pins on the micro could be used for the PWM signals to the motor. After deciding these pins, I began assigning some of the other pins before handing over the responbilities to the team members who had done the initial research for the components.</p>
+			
+			<p>Once the final pinout was decided, I continued to work on the schematic and connect signals. Figure 14 shows the final schematic connections to the microcontroller.</p>
+			
+			<p><img src="Team/progress/images/r_img/rsalo-wk7-microConnections.jpg"></img></p>
+			Figure 14 - Connections to the microcontroller in Eagle schematic
+			
+			<p><img src="Team/progress/images/r_img/rsalo-wk7-schematicP1.jpg"></img></p>
+			Figure 15 - Page 1 of Schematic
+			
+			<p><img src="Team/progress/images/r_img/rsalo-wk7-schematicP2.jpg"></img></p>
+			Figure 16 - Page 2 of Schematic - my contributions include the motor driver circuit
+			
+			<p>Another important development this week was the decision to purchase NFC breakout boards instead of designing our own. Through the research I was doing for the wiring of the NFC chips, we realized that the NFC modules required additional circuitry including antennas. Earlier in my initial component search, I had found a breakout board for a similar NFC chip, the PN532. Once we found out that the chosen PN512 does not have any available breakout boards, we decided to switch to using the PN532 since it is a common module and has a relatively inexpensive breakout board. This considerably simplifies our main PCB layout since we will only need header pins to connect to the two NFC breakout boards.</p>
+			
+			<p>Some technical questions related to the stepper motor have also arisen this week through the work I have been doing, and my goal for this next week is to start addressing them. Particularly, I am wondering how the two enable pins work and what signals need to be sent to the motor to turn in both directions and stop. I have continued my work on connecting the motor to my STM32 microcontroller, and I plan to finish this week. Additionally, I have divided the responsibilites for the midterm design review presentation and have begun some of the project overview slides.</p>
+			</br>
+			
+			<h4>Week 9:</h4>
+            <b>Date:</b> October 20, 2017<br>
+            <b>Total hours:</b> 25<br>
+            <b>Description of design efforts:</b><br>
+            <p>For the past two weeks, my main task has been to design the PCB. I began by routing the motor and motor driver, rearranging the order of the signals to allow for nice traces. In the process of routing, I realized that we need to include a logic level converter between the 3.3 V micro output and the 5 V motor driver input logic signals. Additionally, the motor driver and header pins to the motor leads are on their own ground plane to reduce noise.</p>
+			
+			<p><img src="Team/progress/images/r_img/motor.png"></img></p>
+			Figure 17 - PCB layout for motor driver
+			
+			<p>In addition to routing many of the signals, much of my time this week was spent revising the pinout to allow for clean traces. I approached this in a modular fashion, starting with the signals that were limited to certain pins on our micro (most notably SPI and PWM). I focused on one component at a time and chose the pins that would allow the shortest path with the fewest crossings. For the GPIO pins, I was able to simply save their assignments until the end, and then go around the micro and assign them in order that they are located on the board. I saved the pinout in both the CubeMX file, as well as a Google Docs spreadsheet which has information about each signal and the assigned micro pin.</p>
+			
+			<p><img src="Team/progress/images/r_img/pinoutCube.PNG"></img></p>
+			Figure 18 - CubeMX pinout for microcontroller
+			
+			<p><img src="Team/progress/images/r_img/rsalo-wk9-pinout.png"></img></p>
+			Figure 19 - PCB layout for motor driver
+			
+			<p>Once I had all the pins assigned, I could route the remaining components. I spent considerable time working on the programming header, moving it from its original location to a vertical orientation which required fewer trace crossings. Additionally, at our midterm design review, the course staff pointed out that we had missed some decoupling capacitors on the microcontroller, which I added early this week. We also added resistors across all signals coming from off-board components, so I routed the NFC and input card signals through these. While the task at first appeared simple, it was challenging to find enough space and a method to route signals without many crossings. Finally, I finished the routing by making sure all devices were connected to power. Once this was completed, Cliff and I worked to make final revisions and edit the silkscreen layer before finally ordering the board on Friday evening. We expect to receive it within two weeks. Meanwhile, my next task will be to resume working on the motor control as well as testing the NFC breakout boards.</p>
+			
+			<p><img src="Team/progress/images/r_img/nfc-prg-small.png"></img></p>
+			Figure 20 - PCB layout for NFC breakout boards and programming header
+			
+			<p><img src="Team/progress/images/r_img/inputBoard-small.png"></img></p>
+			Figure 21 - PCB layout for input board
+			
+			<p><img src="Team/progress/images/r_img/wholeBoard-preview-small.png"></img></p>
+			Figure 22 - Preview of top side of PCB
+			
+			<p><img src="Team/progress/images/r_img/wholeBoard-bottom-preview-small.png"></img></p>
+			Figure 23 - Preview of bottom side of PCB
+			
+			</br>
+			
+			
+			<h4>Week 10:</h4>
+            <b>Date:</b> October 27, 2017<br>
+            <b>Total hours:</b> 14<br>
+            <b>Description of design efforts:</b><br>
+            <p>The most exciting progress from the week is that the PCB arrived! We now have 6 copies of the board to start using. While most of the board is as expected, we discovered that the WiFi module does not fit (somehow in all our revising, we had forgotten to print a copy of the layout and check it with the part). This will be challenging to work around, but we should be able to find a solution, even if it is just fly-wiring the module. As I was assisting Cliff in the set-up for load testing, we discovered that we may want to add a couple more resistors and capacitors and space the power components differently. I suspect we will find other minor edits we wish to make as we continue to develop with the PCB, and we have started a running list of desired changes. Although it is not ideal to reprint the board, since our first version was so inexpensive and came so quickly, I hope to be able to submit a revised board for manufacturing by Thanksgiving.</p>
+			<br>
+			<p><img src="Team/progress/images/r_img/printedPCB.jpg"></img></p>
+			Figure 24 - PCB that arrived this week
+			<br>
+			<p>Since our LCD screen was still not working, this past week during ManLab, Cliff and I worked to debug it. I had similar problems on a project last year, so I had some notes on how we might solve the problem. The first error was a hardware error - some of the signals to the LCD were 3.3V instead of 5V, so we added a logic level translator. The second major mistake was that the initialization commands were wrong - the values given in the user manual had been changed when they were originally written in the code. Once these were corrected, the LCD properly displayed text.</p>
+			<br>
+			<p><img src="Team/progress/images/r_img/LCDoutput.jpg"></img></p>
+			Figure 25 - LCD displaying test character sent to it
+			<br>
+			<p>I have also resumed my motor testing, this time with the goal of using a PWM interface (we had been using GPIO previously, and it was not very smooth). Using my STM32F0, I successfully powered LEDs and wrote functions to turn them on in the same order as the motor windings. Unfortunately, in the process of connecting the motor driver and motor, I blew the voltage regulator on my discovery board, and power and ground appear to be shorted. I have started sharing one of our STM32F410 micros, and I found that PWM did not work as easily on our version. I believe this is due to the faster clock, and I suspect that the signals have simply been too fast for the LEDs. I encountered multiple problems, including the LEDs not lighting, the PWM signal not staying on continuosly, and total random output. After several hours of work, I can finally control the LEDs and have written functions that should be able to drive the motor. I had to add a delay in the function to set the PWM value in order to get any output. I am confused why this is necessary and have tried scaling the clock with no success. When I return to the motor tomorrow, my goal is to run the motor using all the actual hardware we will use in the Super Susan and then test with our tabletop (which has also been finished). I still suspect that we will need a gear mechanism to rotate the table, and I want to start designing that as soon as possible.</p>
+			<br>
+			<p><img src="Team/progress/images/r_img/flashingLED_f0.gif"></img></p>
+			Figure 26 - LEDs blinking in order of motor winding signals sent from STM32F0
+			<br><p><img src="Team/progress/images/r_img/F410_fastLED.gif"></img></p>
+			Figure 26 - LEDs powered by PWM signal from STM32F410 with small but unnoticeable delay
+			
+			</br>
+<!--
+            <h4>Week 2:</h4>
+            <b>Date:</b> -Enter today's date here-<br>
+            <b>Total hours:</b> -Enter the number of hours you worked this week here-<br>
+            <b>Description of design efforts:</b><br>
+            -Discuss your design efforts here. Remember to follow the guidelines presented in the Progress Report Policy, available <a href="https://engineering.purdue.edu/ece477/Course/Policies/">here</a>. This is a template entry; simply copy/paste this entry when doing progress reports each week.</br>
+                      -->
+					  
+        </div>
+	
+		<!-- Instantiate global footer. Any changes to the footer should be made through the top-level file "footer.html" -->
+		<div id="footer"></div>
+    </div>
+</div>
+
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#header").load("header.html");
+	$("#menu").load("navbar.html");
+	$("#footer").load("footer.html");
+});
+</script>
+</body>
+</html>

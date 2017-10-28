@@ -1,0 +1,250 @@
+# Library script
+# 
+# Exported from W:/PCB_Design/seniorDesignXO.lbr at 10/16/2017 9:09 AM
+# 
+# EAGLE Version 8.3.2 Copyright (c) 1988-2017 Autodesk, Inc.
+# 
+Set Wire_Bend 2;
+# Grid changed to 'mm' to avoid loss of precision!
+Grid mm;
+Layer   1 Top;
+Layer   2 Route2;
+Layer   3 Route3;
+Layer   4 Route4;
+Layer   5 Route5;
+Layer   6 Route6;
+Layer   7 Route7;
+Layer   8 Route8;
+Layer   9 Route9;
+Layer  10 Route10;
+Layer  11 Route11;
+Layer  12 Route12;
+Layer  13 Route13;
+Layer  14 Route14;
+Layer  15 Route15;
+Layer  16 Bottom;
+Layer  17 Pads;
+Layer  18 Vias;
+Layer  19 Unrouted;
+Layer  20 Dimension;
+Layer  21 tPlace;
+Layer  22 bPlace;
+Layer  23 tOrigins;
+Layer  24 bOrigins;
+Layer  25 tNames;
+Layer  26 bNames;
+Layer  27 tValues;
+Layer  28 bValues;
+Layer  29 tStop;
+Layer  30 bStop;
+Layer  31 tCream;
+Layer  32 bCream;
+Layer  33 tFinish;
+Layer  34 bFinish;
+Layer  35 tGlue;
+Layer  36 bGlue;
+Layer  37 tTest;
+Layer  38 bTest;
+Layer  39 tKeepout;
+Layer  40 bKeepout;
+Layer  41 tRestrict;
+Layer  42 bRestrict;
+Layer  43 vRestrict;
+Layer  44 Drills;
+Layer  45 Holes;
+Layer  46 Milling;
+Layer  47 Measures;
+Layer  48 Document;
+Layer  49 Reference;
+Layer  50 dxf;
+Layer  51 tDocu;
+Layer  52 bDocu;
+Layer  90 Modules;
+Layer  91 Nets;
+Layer  92 Busses;
+Layer  93 Pins;
+Layer  94 Symbols;
+Layer  95 Names;
+Layer  96 Values;
+Layer  97 Info;
+Layer  98 Guide;
+Layer  99 SpiceOrder;
+Description '';
+
+Edit 'CRYSTAL.sym';
+Layer 95;
+Change Size 1.778;
+Change Ratio 8;
+Change Align bottom left;
+Change Font proportional;
+Text '>NAME' R0 (-7.62 8.255);
+Layer 94;
+Change Style continuous;
+Wire  0.254 (0 1.016) (1.27 1.016);
+Wire  0.254 (-1.016 -0.381) (-1.016 0.381) (1.016 0.381) (1.016 -0.381);
+Wire  0.254 (-1.016 -0.381) (1.016 -0.381);
+Wire  0.254 (-1.27 -1.016) (0 -1.016) (1.27 -1.016);
+Wire  0.1524 (0 1.016) (0 3.175);
+Wire  0.1524 (0 -3.175) (0 -1.016);
+Wire  0.254 (-1.27 1.016) (0 1.016);
+Layer 95;
+Change Size 1.778;
+Change Align bottom left;
+Text '>NAME' R0 (-7.62 8.255);
+Pin 'P$1' io none short R270 pad 0 (0 5.08);
+Pin 'P$2' io none short R90 pad 0 (0 -5.08);
+Layer 94;
+Wire  0.254 (-2.54 1.27) -180 (2.54 1.27);
+Wire  0.254 (2.54 -1.27) -180 (-2.54 -1.27) (-2.54 1.27);
+Wire  0.254 (2.54 1.27) (2.54 -1.27);
+
+Edit 'RARRAY_ISO.sym';
+Layer 95;
+Change Size 1.778;
+Change Align bottom left;
+Text '>NAME' R0 (-21.59 6.5786);
+Layer 96;
+Change Size 1.778;
+Change Align bottom left;
+Text '>VALUE' R0 (-21.59 4.318);
+Pin '1' pas none short R270 off 1 (-7.62 10.16);
+Pin '2' pas none short R270 off 1 (-2.54 10.16);
+Pin '3' pas none short R270 off 1 (2.54 10.16);
+Pin '4' pas none short R270 off 1 (7.62 10.16);
+Pin '11' pas none short R90 off 1 (-7.62 -2.54);
+Pin '22' pas none short R90 off 1 (-2.54 -2.54);
+Pin '33' pas none short R90 off 1 (2.54 -2.54);
+Pin '44' pas none short R90 off 1 (7.62 -2.54);
+Layer 94;
+Wire  0.254 (-8.89 8.89) +90 (-7.62 7.62) +90 (-6.35 8.89);
+Wire  0.254 (-3.81 8.89) +90 (-2.54 7.62) +90 (-1.27 8.89);
+Wire  0.254 (1.27 8.89) +90 (2.54 7.62) +90 (3.81 8.89);
+Wire  0.254 (6.35 8.89) +90 (7.62 7.62) +90 (8.89 8.89);
+Wire  0.254 (8.89 -1.27) +90 (7.62 0) +90 (6.35 -1.27);
+Wire  0.254 (3.81 -1.27) +90 (2.54 0) +90 (1.27 -1.27);
+Wire  0.254 (-1.27 -1.27) +90 (-2.54 0) +90 (-3.81 -1.27);
+Wire  0.254 (-6.35 -1.27) +90 (-7.62 0) +90 (-8.89 -1.27);
+Wire  0.2032 (-7.62 1.27) (-8.636 1.651) (-6.604 2.286) (-8.636 2.921) \
+      (-6.604 3.556) (-8.636 4.191) (-6.604 4.826) (-8.636 5.461) \
+      (-6.604 6.096) (-7.62 6.35);
+Layer 95;
+Change Size 1.778;
+Change Align bottom left;
+Text '>NAME' R0 (-21.59 6.5786);
+Layer 96;
+Change Size 1.778;
+Change Align bottom left;
+Text '>VALUE' R0 (-21.59 4.318);
+Layer 94;
+Wire  0.2032 (-2.54 1.27) (-3.556 1.651) (-1.524 2.286) (-3.556 2.921) \
+      (-1.524 3.556) (-3.556 4.191) (-1.524 4.826) (-3.556 5.461) \
+      (-1.524 6.096) (-2.54 6.35);
+Wire  0.2032 (2.54 1.27) (1.524 1.651) (3.556 2.286) (1.524 2.921) \
+      (3.556 3.556) (1.524 4.191) (3.556 4.826) (1.524 5.461) \
+      (3.556 6.096) (2.54 6.35);
+Wire  0.2032 (7.62 1.27) (6.604 1.651) (8.636 2.286) (6.604 2.921) \
+      (8.636 3.556) (6.604 4.191) (8.636 4.826) (6.604 5.461) \
+      (8.636 6.096) (7.62 6.35);
+Wire  0.254 (-7.62 1.27) (-7.62 0);
+Wire  0.254 (-2.54 1.27) (-2.54 0);
+Wire  0.254 (2.54 1.27) (2.54 0);
+Wire  0.254 (7.62 0) (7.62 1.27);
+Wire  0.254 (-11.43 8.89) (-8.89 8.89);
+Wire  0.254 (-6.35 8.89) (-3.81 8.89);
+Wire  0.254 (-1.27 8.89) (1.27 8.89);
+Wire  0.254 (3.81 8.89) (6.35 8.89);
+Wire  0.254 (8.89 8.89) (11.43 8.89) (11.43 -1.27) (8.89 -1.27);
+Wire  0.254 (6.35 -1.27) (3.81 -1.27);
+Wire  0.254 (1.27 -1.27) (-1.27 -1.27);
+Wire  0.254 (-3.81 -1.27) (-6.35 -1.27);
+Wire  0.254 (-8.89 -1.27) (-11.43 -1.27) (-11.43 8.89);
+Wire  0.254 (-8.89 8.89) +90 (-7.62 7.62) +90 (-6.35 8.89);
+Wire  0.254 (7.62 6.35) (7.62 7.62);
+Wire  0.254 (-7.62 6.35) (-7.62 7.62);
+Wire  0.254 (-2.54 6.35) (-2.54 7.62);
+Wire  0.254 (2.54 6.35) (2.54 7.62);
+Wire  0.254 (-3.81 8.89) +180 (-1.27 8.89);
+Wire  0.254 (1.27 8.89) +180 (3.81 8.89);
+Wire  0.254 (6.35 8.89) +180 (8.89 8.89);
+Wire  0.254 (8.89 -1.27) +180 (6.35 -1.27);
+Wire  0.254 (3.81 -1.27) +180 (1.27 -1.27);
+Wire  0.254 (-1.27 -1.27) +180 (-3.81 -1.27);
+Wire  0.254 (-6.35 -1.27) +180 (-8.89 -1.27);
+
+Edit 'HC-49S_9B.pac';
+Description '';
+Layer 21;
+Wire  0.127 (-3.35 -2.5) (-3.15 -2.5) (3.25 -2.5);
+Wire  0.127 (-3.15 2.5) (3.25 2.5);
+Wire  0.127 (-3.15 -1.9) (3.25 -1.9);
+Wire  0.127 (-3.15 1.9) (3.25 1.9);
+Wire  0.127 (-3.15 1.9) +180 (-3.15 -1.9);
+Wire  0.127 (3.25 2.5) -180 (3.25 -2.5);
+Wire  0.127 (3.25 1.9) -180 (3.25 -1.9);
+Wire  0.127 (-3.15 -2.5) -180 (-3.15 2.5);
+Change Drill 0.7;Pad '0' long 0 R180 (-2.44 0);
+Change Drill 0.7;Pad '1' long 0 R180 (2.44 0);
+Layer 27;
+Change Size 1.27;
+Change Ratio 12;
+Change Align bottom left;
+Change Font vector;
+Text '>VALUE' R0 (-5 2.8);
+Layer 25;
+Change Size 1.27;
+Change Align bottom left;
+Text '>NAME' R0 (-0.4 -4);
+
+Edit 'YC164.pac';
+Description '';
+Layer 1;
+Smd 'P$1' 1 0.7 -0 R90 (-1.2 0.8);
+Layer 1;
+Smd 'P$2' 1 0.7 -0 R90 (-0.4 0.8);
+Layer 1;
+Smd 'P$3' 1 0.7 -0 R90 (0.4 0.8);
+Layer 1;
+Smd 'P$4' 1 0.7 -0 R90 (1.2 0.8);
+Layer 1;
+Smd 'P$11' 1 0.7 -0 R90 (-1.2 -0.8);
+Layer 1;
+Smd 'P$22' 1 0.7 -0 R90 (-0.4 -0.8);
+Layer 1;
+Smd 'P$33' 1 0.7 -0 R90 (0.4 -0.8);
+Layer 1;
+Smd 'P$44' 1 0.7 -0 R90 (1.2 -0.8);
+Layer 27;
+Change Size 0.6096;
+Change Align bottom left;
+Text '>VALUE' R90 (2.4 -1.6);
+Layer 25;
+Change Size 0.6096;
+Change Align bottom left;
+Text '>NAME' R90 (-1.8 -1.6);
+
+Edit 'HC-49S_9B.dev';
+Prefix '';
+Description '\
+<b>TXC CORPORATION 9B-25.000MBBK-B</b><br>\n\
+<i>motherboard stm32 HSE external clock reference</i>\n\
+<br><a href="http://www.txccorp.com/download/products/quartz_crystals/2015TXC_9B_33.pdf">http://www.txccorp.com/download/products/quartz_crystals/2015TXC_9B_33.pdf</a>';
+Value off;
+Add CRYSTAL 'G$1' next 0 (0 0);
+Package 'HC-49S_9B' '';
+Technology '';
+Connect  'G$1.P$1' '0'  'G$1.P$2' '1';
+
+Edit 'YC164.dev';
+Prefix '';
+Description '\
+<b>Yageo Resistor Array</b><br>\n\
+<i>motherboard serial resistance for cables headed offboard</i><br>\n\
+<a href=""></a>';
+Value off;
+Add RARRAY_ISO 'G$1' next 0 (0 -5.08);
+Package 'YC164' '';
+Technology '';
+Connect  'G$1.1' 'P$1'  'G$1.2' 'P$2'  'G$1.3' 'P$3'  'G$1.4' 'P$4'  'G$1.11' 'P$11' \
+         'G$1.22' 'P$22'  'G$1.33' 'P$33'  'G$1.44' 'P$44';
+Grid inch;
+Edit ;

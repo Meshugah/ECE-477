@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+This is an example weekly progress report document that team members can use to report their individual progress 
+of their ECE477 senior design projects. Weekly progress reports are expected to follow the general guidelines
+presented in the "Progress Report Policy" document, available online at https://engineering.purdue.edu/ece477/Course/Policies/policies.html
+
+Please create 4 copies of this example, renaming each copy to <PurdueID>.html, where <PurdueID> corresponds to
+the Purdue ITAP Career Account ID given by Purdue to each individual team member. If you have any questions,
+contact course staff.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--Reconfigurable base tag; used to modify the site root location for root-relative links-->
+<base href="https://engineering.purdue.edu/477grp15/" />
+
+<!--Content-->
+<title>ECE477 Course Documents</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="author" content="George Hadley">
+<meta name = "format-detection" content = "telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+#myDIV {
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+	background-color: white;
+	margin-top: 20px;
+}
+
+.button {
+    background-color: black;
+	border-radius: 15px;
+	color: gold;
+	padding: 15px 22px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size:14px;
+}
+.button2 {
+    background-color: gold;
+	border-radius: 15px;
+	color: black;
+	padding: 15px 22px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size:14px;
+}
+
+</style>
+
+<!--CSS-->
+<link rel="stylesheet" href="css/default.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/content.css">
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+<body>
+<div id="wrapper_site">
+    <div id="wrapper_page">
+	<!-- Instantiate global site header.-->
+	<div id="header"></div>
+		<!-- Instantiate site global navigation bar.-->
+		<div id="menu"></div>
+	
+		<!-- Instantiate a page banner image. Page banner images should be 1100x350px and should be located within the local
+			img folder located at this directory level. -->
+		<div id="banner">
+			<img src="Files/img/BannerImgExample.jpg"></img>
+		</div>
+	
+		<!-- Instantiate "tools" needed for a page. Tools are premade functional blocks that can be used to build a page,
+			and include things such as a file lister (for listing out homework assignments or tutorials)
+		-->
+		<div id="content">
+            <h2>Progress Report for Clifton Somers</h2>
+            <p> Select a button to reveal that week's progress report. This is a method implemented by my colleague Ziad which I believe to be a great improvement><br><br>
+			<button class="button"  onclick="week(1)">Week 01</button>
+			<button class="button"  onclick="week(2)">Week 02</button>
+			<button class="button"  onclick="week(3)">Week 03</button>
+			<button class="button"  onclick="week(4)">Week 04</button>
+			<button class="button"  onclick="week(5)">Week 05</button>
+			<button class="button"  onclick="week(6)">Week 06</button>
+			<button class="button"  onclick="week(7)">Week 07</button>
+			<button class="button"  onclick="week(8)">Week 08</button>
+			<button class="button2" onclick="week(9)">Week 09</button>
+			<button class="button2" onclick="week(10)">Week 10</button>
+			<button class="button2" onclick="week(11)">Week 11</button>
+			<button class="button2" onclick="week(12)">Week 12</button>
+			<button class="button2" onclick="week(13)">Week 13</button>
+			<button class="button2" onclick="week(14)">Week 14</button>
+			<button class="button2" onclick="week(15)">Week 15</button>
+			<button class="button2" onclick="week(16)">Week 16</button>
+
+
+			
+			<div id="week1">
+            <h4>Week 1:</h4>
+            <b>Date:</b> 08/24/17<br>
+            <b>Total hours:</b> 5<br>
+            <b>Description of design efforts:</b><br>
+			The team discussed matters of hardware implementation: whether there is redundancy in having NFC chips if the user is using a barcode scanner. This sparked conversation on our project's image: do we want to respin it in a medicinal light? Team positions and assignment responsibilities were assigned and success criteria were generated from the desired high level system i/o.</br>
+			</div>
+            <br>
+			
+			<div id="week2">
+            <h4>Week 2:</h4>
+            <b>Date:</b> 09/01/17<br>
+            <b>Total hours:</b> 6<br>
+            <b>Description of design efforts:</b><br>
+            The majority of this week's efforts came in directing attention to inclariy in the project. The weighing mechanism and the WiFi module were the two least talked about and least understood modules and some of the best work the team and I had accomplished was in bringing attention to these details.<br>Another component victory for me was to pitch the physical layout of components to the team. In discussing what requirements the weighing hardware requires we were able to come up with a sleaker looking and more stable layout for enclosure.</br>
+			
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/somers-wk2-story.png"></img></p>
+			<b>Figure 1 - Storyboarding</b>
+			<i> In order to better vizualize process a user undergoes when using the Super Susan, the team compartmentalizes each step within the system. Though the main goal was to remove any unneeded steps the end result was solidity across all of the system components, from network/database responsibilities to bottle identification.</i><br>
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/somers-wk2-drawing.png"></img></p>
+			<b>Figure 2 - Early Design Considerations</b>
+			<i>To inform the use and design constraints of the Super Susan the implementation of the Susan's geometry was discussed again. Since the weight measuring sensor must be under a bottle and the sensors by them selves are not aesthetically pleasing, the idea of having the rotating platform hide this circuitry was chosen. The newest design concept (right) consists of three seperate plastic surfaces.</i><br>
+			</div>
+
+			<div id="week3">
+			<h4>Week 3:</h4>
+            <b>Date:</b> 09/08/17<br>
+            <b>Total hours:</b> 10<br>
+            <b>Description of design efforts:</b><br>
+            This week I had brought in many supplies in hopes of providing tinder to the creative process and development process. To help provide motors I had gone out to local salvage and consignment store in search of cheap printers to scrap for parts. I had ended up bring two older inkjet printers to the lab for us to tear apart and had discovered after taking them apart with Ziad, that all of the motors involved with both devices were actually DC motors that were operated like steppers using opical encoders (choppers). Although this detail sparked many conversations about realignment of the cover layer of the Super Susan, the choice of a stepper motor remains. The optical encoder wheels that were present in the printers may be salvaged for our use at a later time. <i> Joe had also directed me to resources provided by previous senior design teams. Since some bipolar stepper motors and controllers are amoung these resources, we should still be able to get a head start in our development in this front.</i></br>
+			To jumpstart the information front involved with weighing technology and scale, I had checked out a scale that Joe had offered, and later in the week brought in the digital scale I had ordered online. To provide simple data useful to bottle selection and the weight of spices, I had brought in many empty spice bottles from home onion powder, and chili powder. Further, as a substance to provide an upper estimate for any spice I had also eariler in the week collected gravel for use in the project. (I had washed and dried this gravel before bringing it into the lab). The data these bottles and this gravel provided informed Rebecca's torque calculations for our motor drive.</br>
+			In component analysis, I resumed the hard work I had already started in the summer. Having already accumlated a spreadsheet of microcontrollers and search fields, I only needed to taylor the values to narrow our list to a handful of microcontrollers. The microcontroller I had selected for the team has a development board and stats that should prove more powerful than we need. 
+			</div>
+
+			<div id="week4">
+			<h4>Week 4:</h4>
+            <b>Date:</b> 09/10/17<br>
+			<b>Total hours:</b> (2.5)<br>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/susan.png"></img></p>
+			<b>Figure 3 - Super Susan Layout Terminology</b>
+			<i>Decided by early last week was some terminology associated with the physical components of the Super Susan. Today I put out a diagram to help document these details. Currently, our heights are under negotiation as the lcd screen we will select is still undecided. Until then, protoyping will commence on displays similar to our options until we decide more definitively on our display.</i><br>
+            
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/input_00_sch.png"></img></p>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/input_00_brd.png"></img></p>
+			<b>Figure 4, 5 - Front Plate PCB Head Start</b>
+			<i>The input card will rest in front of the Super Susan and service as the main interface with the user. The i/o devices on the card will be controlled via a 20-pin cable that connects to the mother board.</i><br>
+            
+			<b>Date:</b> 09/15/17<br>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/input_01_brd_fr.png"></img></p>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/input_01_brd_bk.png"></img></p>
+			<b>Figure 6 - Progress on Input Card</b>
+			<i>Many positive conceptual changes occur in the design - the major interface/hardware components remain on the front side, while logic and ICs have moved to the reverse. Header pins are replaced with long cable bracket so that cable direction is never mistaken</i><br>
+            
+			<b>Total hours:</b> 12<br>
+			Note: It is beginning to become more than a little challenging to track the amount of time I spend towards senior design, as many of my waking moments away from class are centered towards the project. I am having to estimate this week's time commitment, knowing it's very likely an underestimate.
+            <br><b>Description of design efforts:</b><br>
+            Progress this week was made in starting the interface for our main, user-tangible IO. Even before the BOM is purchased, the need to simplify our interface with the approved parts become tremendously valuable. The PCB I've started is on its way to incorporating all the signals from the motherboard, but otherwise is mostly complete. I hope to finish this design and submit early next week. <br> Team progress for our showmeathings was satifying: we made a motor move, connected to our most basic IO, and connected via a phone to the database. Progress comming up next will require more serious IO from our micro-controller (as far as getting an LCD display to respond) and perhaps simple functionality from our wifi modules that came in the same day as our 
+			<br><br>
+			</div>
+
+			<div id="week5">
+			<h4>Week 5:</h4>
+			<b>Date:</b> 09/19/17<br>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/input_gerb_t.png"></img></p>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/input_gerb_b.png"></img></p>
+			<b>Figure 7 - Submitted Input Card Design</b>
+			<i>The board was submitted 10am today through EasyEDA: 9 day turn around. The most recent changes to the board include (abrigding) changing of socket size, + optional oscillator, + heartbeat LED, + stitching vias, and interground connections and plenty of others that are harder to capture since the last checkpoint.</i><br>
+            At least 10 hours were sunk on the pcb this weekend and at least 6 yesterday. In addition to the pcb, (most important), the lion's share of our project components have been ordered. Many of the most critical design stages are coming up next, so this week will help to allocate the nessesary information needed to implement them. If an interface has some complexity, then the goals this week will help to simplify them and clarify their needs.<br>
+			
+			<b>Date:</b> 09/22/17<br>
+			<b>Total hours:</b> ~24<br>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/collage_wk5.png"></img></p>
+			<b>Figure 8 - An Accomplished Inventory</b>
+			<br>This week for me ended up being a week of administration. Having submitted orders at the beginning of the week I played a bit more of a 
+			support role for the team. I brought in a router to set up a wireless network for our ESP8366 and took ahold of our CAD modeling tasks. Using 
+			Autodesk Inventor I was able to realize the design we have been discussing with almost no snags at all. I have gained a confidence that our 
+			project is ready to prototype completely, even including assembly of the packaging. In the past two days our packages have come in, giving the 
+			freedom to expand our testing, and to do the beginning steps in putting things together.
+			 
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/super_susan_nb.gif"></img></p>
+			<b>Figure 9 - Top View, Super Susan Rotation/Alignment</b><br><br><br>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/board_dims.png"></img></p>
+			<b>Figure 10 - Mother Board Preliminary Layout</b><br><br><br>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/exploded.png"></img></p>
+			<b>Figure 11 - Super Susan Exploded and Bottle View</b><br><br><br>
+			</div>
+
+			
+			<div id="week6">
+			<h4>Week 6:</h4>
+			<b>Date:</b> 09/29/17<br>
+			<b>Total hours:</b> 6<br>
+			<b>Summary of Efforts:</b><br>
+			This week I had spearheaded the creation of the parts library for eagle. Some major changes were made to the design: the sensors are no longer going to be included. Also in some field testing I had checked and deduced temperature compensation for weight sensing is not necessary. Also this week I had met with Chuck in the machine shop to talk about the specifics of the cover. I had submitted to him the CAD drawing of the part for assembly.
+			<br><br>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/sketch_0.png"></img></p>
+			<b>Figure 12 - Sketch Without Traces</b><br><br><br>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/salt_temps.png"></img></p>
+			<b>Figure 13 - </b>Temperatures of Salt: Room Temp and Chilled<br><br><br>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/sprink_temps.png"></img></p>
+			<b>Figure 14 - </b>Temperatures of Sprinkles: Room Temp and Chilled<br><br><br>
+			</div>
+
+			<div id="week7">
+			<h4>Week 7:</h4>
+			<b>Date:</b> 10/06/17<br>
+			<b>Total hours:</b> 10<br>
+			<b>Summary of Efforts:</b><br>
+			This week was used to compile the schematic for the motherboard. In this process, decisions on what was going to be connected to which pins of the microcontroller and how.  The interfaces that gave us the most trouble, and will continue to, include the wifi module, the USB Type-C power circuitry, the NFC circuitry, and the programming interface. Most of the issues are in absences of knowledge in what pins to connect, even when the communication interface was chosen long beforehand. For example: the NFC chip we chose had a serial port; however, it also had many other wires that were not mentioned included a 7 bit bi-directional data bus line, 2 bit address line, and host of other pins. Many of these signal pins were incorporated into an antenna circuit we had overlooked. Since we needed more information to approach that circuit (values of passives, part information, etc), and could not find a vendor to purchase its development board, we had to completely replace this element of our design with the next best option. This new part, is the PN532, as decided in our parts analysis for early in the project. The end result is that we will incorporate its dev boards into our project, since the antenna circuitry and closely matched impedence elements are a non-trivial design task.<br><br>
+			Earlier in the week, to fill in time Rebecca and I had been spending on schematic design, Vignesh and Ziad had approached the assembly of the input card. Though this element is not immediately to our nearest deadlines, it is still excellent to have it assembled. As neither Vignesh nor Ziad had training soldering surface mount packages, I had helped coach them through the process and give them feedback on how to improve their work and make the job easier.<br><br>
+			Another component of this weeks major works includes having designed a breakout board for USB Type-C. I considered this a great feat and had though I had done very well, but thankfully before I had ordered it had recognized that the USB Type-C socket I had designed the board for was not commonly marketed - meaning my board will need to be redesigned. This is a frustrating set-back, but there is no choice but to make the board correctly, or not at all. The part that is commonly marketed is very similar, but has through hole pins for the top side of the USB cable rather than pads for both sides.  What had redeemed the frustrations of the day was the compilation of a Gantt chart. I had never made a Gantt chart before, but I am learning that in doing so we can see the tasks ahead of us very easily and can make much more educated decisions about the priorities of our efforts.<br>
+			<br><br>
+						
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/sketch_2.png"></img></p>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/sketch_3.png"></img></p>
+			<b>Figure 15 - Motherboard Sketch Draft, page 1 and page 2</b><br><br><br>
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/input_complete.png"></img></p>
+			<b>Figure 16 - </b>Well Done Soldering Team - Input Board Almost Complete<br><br><br>
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/usbc_00_brd.png"></img></p>
+			<b>Figure 17 - </b>PCB Output for USB Type-C Power Breakout<br><br><br>
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/gantt.png"></img></p>
+			<b>Figure 18 - </b>Gantt Chart for Evening Stages of Develop<br><br><br>
+			</div>
+
+			<div id="week8">
+			<h4>Week 8:</h4>
+			<b>Date: 10/11/17</b><br>
+			<b>Total Hours: ~16</b><br>
+			This is the final week in the first half of the course and marks the week of Midterm Design Reviews. Our team presentation, despite its scheduled date being immediately following vacation, came together with great quality. Overall the course staff and our peers were satisfied with our level of completion and attention to deal thus far. The most memorable suggestions in board layout were to check the number of decoupling capictors required by the microcontroller, and to implment a backup crystal circuit. Both considedrations will be implmented before submitting our design for production.
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/mother_all.png	"></img></p>
+			<b>Figure 19 - </b>Motherboard PCB Design<br>
+
+			</div>
+			
+			
+			
+			<div id="week9">
+			<h4>Week 9:</h4>
+			<b>Date: 10/20/17</b><br>
+			<b>Total Hours: 25+</b><br>
+			In this week we finalized the production of our pcb and all of its glory. Many traces were rerouted across the board in association with the input card socket and nfc and overall, many fewer traces cross than before. The silkscreen layer was augmented with labels for all of the debug signals and a few addition breakout vias for checking the power levels and probing signals. The <i>one</i> spare pin on our micro controller was routed to a debug LED so that we could get simple binary feedback while we encorporate our LCD screen. The crystal circuit and ground layer accommodations were made so that we will hopefully be able to have a reliable 16MHz external clock source, rather than the simple RC resonater. <br>
+			Additional to Rebecca and I's cooperatie efforts on the PCB I had also attempted to get a functional prototype for the weight sensing circuit. I was able to get the development environment set up on my computer, the microcontroller programming and sending out SPI signals, and data being read back from the HX711 load amplifier; however, the values did not seem to change when the bar was stressed. I am uncertain if this is due to inpropper operation or faulty equiptment, but I suspect the latter. The HX711 requires 25 or 27 bits to be sent in order to send back the data and set the gain value, but the HAL software from STM only supports bytewise communication. To help mitigate the issue I had written drivers for bit banging the comminication until I can handle the nuiance of switching the port pins' operations on-the-fly. These drivers will be tested this weekend.
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/mother.png	"></img></p>
+			<b>Figure 20 - </b>Final Draft Submitted<br>
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/load_circuit.png	"></img></p>
+			<b>Figure 21 - </b>Load Cell Test Circuit<br>
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/drivers.png	"></img></p>
+			<b>Figure 22 - </b>Drivers for 25 Bit SPI<br>
+			</div>
+
+			
+			<div id="week10">
+			<h4>Week 10:</h4>
+			<b>Date: 10/27/17</b><br>
+			<b>Total Hours: 8</b><br>
+			In spite of all odds, our motherboard PCB came back from China this week, Thursday evening. Though the expectation is that it would take at least 7 buisness days, production and shipping happened in a miraculous in a record 5 calendar days. The most exiciting of our news thus far, Thursday night was spent soldering on the power elements of the circuit board and examining the board for defects. There were a few minor issues with the board and one major issue - an embarrasing footprint error that could have been avoided if we had printed 1:1 as advized before. I am not surprised that there are issues, but I am irked that this one got through - the wifi card pin spacing is off by 100 mils. Though the problem is not a showstopper by any means it is a possible grounds for a new board if other improvements merit a respin. Errors asside, the results are beautiful. The board spacing looks great and the silk screen and traces are all continuous and unflawed. After logging the issues I had seen I had hooked up the circuit for load testing at 15 Ohms on the 3.3 volt line. There it would stay for nearly 24 hours. <br>
+			Other exciting breakthroughs did occur this week, especially in terms of software. By wiring up the LCD screen as a 5 volt circuit we were able to get reliable communication for debug. With this result I was able to write a simple function to get better real-time feedback on the weight sensor feedback I was trying to read. Upon closer investigation it appears as though the connections to the weight sensor are floating - a typically challenge of trying to wire MTA-100 connectors. I had tried rewiring the connections, and will resume testing of the weight sensor next week. On the same weight sensor topic, I also submitted supporting parts for the weight sesnors down to Chuck in the machine shop. The parts include small linking components that space out the load cell from its mounting surface, the platforms that will support the weight, and also our flat inner layer, the surface. The platforms, not present in our design originally, are round and help focus pressure down onto the load cell to give more accurate weight readings.
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/changes.png	"></img></p>
+			<b>Figure 23 - </b>Log of PCB Imperfections<br>
+			Many possible changes can be implemented to create a higher quality design from a space usage standpoint.<br>
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/beauty.png	"></img></p>
+			<b>Figure 24 - </b>The Motherboard with Power Circuit<br>
+			In this photo, the power lines from top to bottom are: 3.3V (orange), 5V (red), 12V (yellow), and GND (blue), immitating the ATX power supply conventions of color coding the voltage rails. <br>
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/load_test.png	"></img></p>
+			<b>Figure 25 - </b>Load Cell Debug Readings<br>
+			The motherboard is hooked to measure the 3.3V voltage line over night. Load restance is set to 15 Ohms, [V/R = I  ==> 3.3V / 15Ohms = 220 mA]. The 3.3V LDO is rated for up to 1 Amp of current draw, but should be rated for 200 mA for any given period of high usage from the micro-controller and NFC tags.  <br>
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/load_check.png	"></img></p>
+			<b>Figure 26 - </b>Log of Power Check<br>
+			
+			<br>
+			<br>
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/test_25bit.gif	"></img></p>
+			<b>Figure 27 - </b>Drivers Tested for 25 Bit SPI<br>
+			25 bits clock pulses are provided and the HX711 provides back data in 2's-complement. 
+			
+			<p><img src="https://engineering.purdue.edu/477grp15/Team/progress/images/c_img/readings.gif	"></img></p>
+			<b>Figure 28 - </b>Drivers for 25 Bit SPI<br>
+			Though values indicate a disconented sensor, the LCD screen displays that data can be shifted from the load amplifier periodically.
+			</div>
+			
+			
+			
+			
+        </div>
+	
+		<!-- Instantiate global footer. Any changes to the footer should be made through the top-level file "footer.html" -->
+		<div id="footer"></div>
+    </div>
+</div>
+
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+
+</script>
+<script> function week(i) {
+	switch(i) {
+		case 1: var x = document.getElementById("week1"); break;
+		case 2: var x = document.getElementById("week2"); break;
+		case 3: var x = document.getElementById("week3"); break;
+		case 4: var x = document.getElementById("week4"); break;
+		case 5: var x = document.getElementById("week5"); break;
+		case 6: var x = document.getElementById("week6"); break;
+		case 7: var x = document.getElementById("week7"); break;
+		case 8: var x = document.getElementById("week8"); break;
+		case 9: var x = document.getElementById("week9"); break;
+		case 10: var x = document.getElementById("week10"); break;
+		case 11: var x = document.getElementById("week11"); break;
+		case 12: var x = document.getElementById("week12"); break;
+		case 13: var x = document.getElementById("week13"); break;
+		case 14: var x = document.getElementById("week14"); break;
+		case 15: var x = document.getElementById("week15"); break;
+		case 16: var x = document.getElementById("week16"); break;
+	}	
+	if (x.style.display == "none"){
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+</script>
+</script>
+<script type="text/javascript">
+week(1);week(2);week(3);week(4);week(5);week(6);week(7);week(8);week(9);week(10);week(11);week(12);week(13);week(14);week(15);week(16);
+$(document).ready(function() {
+    $("#header").load("header.html");
+	$("#menu").load("navbar.html");
+	$("#footer").load("footer.html");
+});
+</script>
+</body>
+</html>

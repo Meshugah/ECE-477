@@ -1,0 +1,444 @@
+# Library script
+# 
+# Exported from C:/EAGLE 8.3.2/lbr/wirelessChip.lbr at 10/4/2017 11:28 AM
+# 
+# EAGLE Version 8.3.2 Copyright (c) 1988-2017 Autodesk, Inc.
+# 
+Set Wire_Bend 2;
+# Grid changed to 'mm' to avoid loss of precision!
+Grid mm;
+Layer   1 Top;
+Layer   2 Route2;
+Layer   3 Route3;
+Layer   4 Route4;
+Layer   5 Route5;
+Layer   6 Route6;
+Layer   7 Route7;
+Layer   8 Route8;
+Layer   9 Route9;
+Layer  10 Route10;
+Layer  11 Route11;
+Layer  12 Route12;
+Layer  13 Route13;
+Layer  14 Route14;
+Layer  15 Route15;
+Layer  16 Bottom;
+Layer  17 Pads;
+Layer  18 Vias;
+Layer  19 Unrouted;
+Layer  20 Dimension;
+Layer  21 tPlace;
+Layer  22 bPlace;
+Layer  23 tOrigins;
+Layer  24 bOrigins;
+Layer  25 tNames;
+Layer  26 bNames;
+Layer  27 tValues;
+Layer  28 bValues;
+Layer  29 tStop;
+Layer  30 bStop;
+Layer  31 tCream;
+Layer  32 bCream;
+Layer  33 tFinish;
+Layer  34 bFinish;
+Layer  35 tGlue;
+Layer  36 bGlue;
+Layer  37 tTest;
+Layer  38 bTest;
+Layer  39 tKeepout;
+Layer  40 bKeepout;
+Layer  41 tRestrict;
+Layer  42 bRestrict;
+Layer  43 vRestrict;
+Layer  44 Drills;
+Layer  45 Holes;
+Layer  46 Milling;
+Layer  47 Measures;
+Layer  48 Document;
+Layer  49 Reference;
+Layer  51 tDocu;
+Layer  52 bDocu;
+Layer  90 Modules;
+Layer  91 Nets;
+Layer  92 Busses;
+Layer  93 Pins;
+Layer  94 Symbols;
+Layer  95 Names;
+Layer  96 Values;
+Layer  97 Info;
+Layer  98 Guide;
+Description '';
+
+Edit 'ESP8266.sym';
+Layer 94;
+Change Style continuous;
+Wire  0.254 (-30.48 22.86) (10.16 22.86) (10.16 5.08) (-30.48 5.08) \
+      (-30.48 22.86);
+Pin 'V3.3' io none short R90 both 0 (-27.94 2.54);
+Pin 'GND' io none short R90 both 0 (-25.4 2.54);
+Pin 'TX' io none short R90 both 0 (-22.86 2.54);
+Pin 'RX' io none short R90 both 0 (-20.32 2.54);
+Pin 'D8' io none short R90 both 0 (-17.78 2.54);
+Pin 'D7' io none short R90 both 0 (-15.24 2.54);
+Pin 'D6' io none short R90 both 0 (-12.7 2.54);
+Pin 'D5' io none short R90 both 0 (-10.16 2.54);
+Pin 'GND@1' io none short R90 both 0 (-7.62 2.54);
+Pin 'V3.3@1' io none short R90 both 0 (-5.08 2.54);
+Pin 'D4' io none short R90 both 0 (-2.54 2.54);
+Pin 'D3' io none short R90 both 0 (0 2.54);
+Pin 'D2' io none short R90 both 0 (2.54 2.54);
+Pin 'D1' io none short R90 both 0 (5.08 2.54);
+Pin 'D0' io none short R90 both 0 (7.62 2.54);
+Pin 'A0' io none short R270 both 0 (7.62 25.4);
+Pin 'RSV' io none short R270 both 0 (5.08 25.4);
+Pin 'RSV@1' io none short R270 both 0 (2.54 25.4);
+Pin 'SD3' io none short R270 both 0 (0 25.4);
+Pin 'SD2' io none short R270 both 0 (-2.54 25.4);
+Pin 'SD1' io none short R270 both 0 (-5.08 25.4);
+Pin 'CMD' io none short R270 both 0 (-7.62 25.4);
+Pin 'SD0' io none short R270 both 0 (-10.16 25.4);
+Pin 'CLK' io none short R270 both 0 (-12.7 25.4);
+Pin 'GND@2' io none short R270 both 0 (-15.24 25.4);
+Pin 'V3.3@2' io none short R270 both 0 (-17.78 25.4);
+Pin 'EN' io none short R270 both 0 (-20.32 25.4);
+Pin 'RST' io none short R270 both 0 (-22.86 25.4);
+Pin 'GND@3' io none short R270 both 0 (-25.4 25.4);
+Pin 'V5' io none short R270 both 0 (-27.94 25.4);
+
+Edit 'ESP8266.pac';
+Description '';
+Layer 21;
+Wire  0.1524 (13.335 1.27) (14.605 1.27) (15.24 0.635) (15.24 -0.635) \
+      (14.605 -1.27);
+Wire  0.1524 (15.24 0.635) (15.875 1.27) (17.145 1.27) (17.78 0.635) \
+      (17.78 -0.635) (17.145 -1.27) (15.875 -1.27) (15.24 -0.635);
+Wire  0.1524 (10.16 0.635) (10.795 1.27) (12.065 1.27) (12.7 0.635) \
+      (12.7 -0.635) (12.065 -1.27) (10.795 -1.27) (10.16 -0.635);
+Wire  0.1524 (13.335 1.27) (12.7 0.635);
+Wire  0.1524 (12.7 -0.635) (13.335 -1.27);
+Wire  0.1524 (14.605 -1.27) (13.335 -1.27);
+Wire  0.1524 (5.715 1.27) (6.985 1.27) (7.62 0.635) (7.62 -0.635) \
+      (6.985 -1.27);
+Wire  0.1524 (7.62 0.635) (8.255 1.27) (9.525 1.27) (10.16 0.635) \
+      (10.16 -0.635) (9.525 -1.27) (8.255 -1.27) (7.62 -0.635);
+Wire  0.1524 (2.54 0.635) (3.175 1.27) (4.445 1.27) (5.08 0.635) \
+      (5.08 -0.635) (4.445 -1.27) (3.175 -1.27) (2.54 -0.635);
+Wire  0.1524 (5.715 1.27) (5.08 0.635);
+Wire  0.1524 (5.08 -0.635) (5.715 -1.27);
+Wire  0.1524 (6.985 -1.27) (5.715 -1.27);
+Wire  0.1524 (-1.905 1.27) (-0.635 1.27) (0 0.635) (0 -0.635) \
+      (-0.635 -1.27);
+Wire  0.1524 (0 0.635) (0.635 1.27) (1.905 1.27) (2.54 0.635) \
+      (2.54 -0.635) (1.905 -1.27) (0.635 -1.27) (0 -0.635);
+Wire  0.1524 (-5.08 0.635) (-4.445 1.27) (-3.175 1.27) (-2.54 0.635) \
+      (-2.54 -0.635) (-3.175 -1.27) (-4.445 -1.27) (-5.08 -0.635);
+Wire  0.1524 (-1.905 1.27) (-2.54 0.635);
+Wire  0.1524 (-2.54 -0.635) (-1.905 -1.27);
+Wire  0.1524 (-0.635 -1.27) (-1.905 -1.27);
+Wire  0.1524 (-9.525 1.27) (-8.255 1.27) (-7.62 0.635) (-7.62 -0.635) \
+      (-8.255 -1.27);
+Wire  0.1524 (-7.62 0.635) (-6.985 1.27) (-5.715 1.27) (-5.08 0.635) \
+      (-5.08 -0.635) (-5.715 -1.27) (-6.985 -1.27) (-7.62 -0.635);
+Wire  0.1524 (-12.7 0.635) (-12.065 1.27) (-10.795 1.27) (-10.16 0.635) \
+      (-10.16 -0.635) (-10.795 -1.27) (-12.065 -1.27) (-12.7 -0.635);
+Wire  0.1524 (-9.525 1.27) (-10.16 0.635);
+Wire  0.1524 (-10.16 -0.635) (-9.525 -1.27);
+Wire  0.1524 (-8.255 -1.27) (-9.525 -1.27);
+Wire  0.1524 (-17.145 1.27) (-15.875 1.27) (-15.24 0.635) (-15.24 -0.635) \
+      (-15.875 -1.27);
+Wire  0.1524 (-15.24 0.635) (-14.605 1.27) (-13.335 1.27) (-12.7 0.635) \
+      (-12.7 -0.635) (-13.335 -1.27) (-14.605 -1.27) (-15.24 -0.635);
+Wire  0.1524 (-17.78 0.635) (-17.78 -0.635);
+Wire  0.1524 (-17.145 1.27) (-17.78 0.635);
+Wire  0.1524 (-17.78 -0.635) (-17.145 -1.27);
+Wire  0.1524 (-15.875 -1.27) (-17.145 -1.27);
+Wire  0.1524 (17.78 0.635) (18.415 1.27) (19.685 1.27) (20.32 0.635) \
+      (20.32 -0.635) (19.685 -1.27) (18.415 -1.27) (17.78 -0.635);
+Change Drill 1.016;Pad 'V5' long 0 R90 (-16.51 0);
+Change Drill 1.016;Pad 'GND@3' long 0 R90 (-13.97 0);
+Change Drill 1.016;Pad 'RST' long 0 R90 (-11.43 0);
+Change Drill 1.016;Pad 'EN' long 0 R90 (-8.89 0);
+Change Drill 1.016;Pad 'V3.3@2' long 0 R90 (-6.35 0);
+Change Drill 1.016;Pad 'GND@2' long 0 R90 (-3.81 0);
+Change Drill 1.016;Pad 'CLK' long 0 R90 (-1.27 0);
+Change Drill 1.016;Pad 'SD0' long 0 R90 (1.27 0);
+Change Drill 1.016;Pad 'CMD' long 0 R90 (3.81 0);
+Change Drill 1.016;Pad 'SD1' long 0 R90 (6.35 0);
+Change Drill 1.016;Pad 'SD2' long 0 R90 (8.89 0);
+Change Drill 1.016;Pad 'SD3' long 0 R90 (11.43 0);
+Change Drill 1.016;Pad 'RSV@1' long 0 R90 (13.97 0);
+Change Drill 1.016;Pad 'RSV' long 0 R90 (16.51 0);
+Change Drill 1.016;Pad 'A0' long 0 R90 (19.05 0);
+Layer 25;
+Change Size 1.27;
+Change Ratio 10;
+Change Align bottom left;
+Change Font proportional;
+Text '>NAME' R0 (-17.8562 1.8288);
+Layer 51;
+Rect R0 (16.256 -0.254) (16.764 0.254);
+Layer 51;
+Rect R0 (13.716 -0.254) (14.224 0.254);
+Layer 51;
+Rect R0 (11.176 -0.254) (11.684 0.254);
+Layer 51;
+Rect R0 (8.636 -0.254) (9.144 0.254);
+Layer 51;
+Rect R0 (6.096 -0.254) (6.604 0.254);
+Layer 51;
+Rect R0 (3.556 -0.254) (4.064 0.254);
+Layer 51;
+Rect R0 (1.016 -0.254) (1.524 0.254);
+Layer 51;
+Rect R0 (-1.524 -0.254) (-1.016 0.254);
+Layer 51;
+Rect R0 (-4.064 -0.254) (-3.556 0.254);
+Layer 51;
+Rect R0 (-6.604 -0.254) (-6.096 0.254);
+Layer 51;
+Rect R0 (-9.144 -0.254) (-8.636 0.254);
+Layer 51;
+Rect R0 (-11.684 -0.254) (-11.176 0.254);
+Layer 51;
+Rect R0 (-14.224 -0.254) (-13.716 0.254);
+Layer 51;
+Rect R0 (-16.764 -0.254) (-16.256 0.254);
+Layer 51;
+Rect R0 (18.796 -0.254) (19.304 0.254);
+Layer 21;
+Wire  0.1524 (13.335 -24.13) (14.605 -24.13) (15.24 -24.765) (15.24 -26.035) \
+      (14.605 -26.67);
+Wire  0.1524 (15.24 -24.765) (15.875 -24.13) (17.145 -24.13) (17.78 -24.765) \
+      (17.78 -26.035) (17.145 -26.67) (15.875 -26.67) (15.24 -26.035);
+Wire  0.1524 (10.16 -24.765) (10.795 -24.13) (12.065 -24.13) (12.7 -24.765) \
+      (12.7 -26.035) (12.065 -26.67) (10.795 -26.67) (10.16 -26.035);
+Wire  0.1524 (13.335 -24.13) (12.7 -24.765);
+Wire  0.1524 (12.7 -26.035) (13.335 -26.67);
+Wire  0.1524 (14.605 -26.67) (13.335 -26.67);
+Wire  0.1524 (5.715 -24.13) (6.985 -24.13) (7.62 -24.765) (7.62 -26.035) \
+      (6.985 -26.67);
+Wire  0.1524 (7.62 -24.765) (8.255 -24.13) (9.525 -24.13) (10.16 -24.765) \
+      (10.16 -26.035) (9.525 -26.67) (8.255 -26.67) (7.62 -26.035);
+Wire  0.1524 (2.54 -24.765) (3.175 -24.13) (4.445 -24.13) (5.08 -24.765) \
+      (5.08 -26.035) (4.445 -26.67) (3.175 -26.67) (2.54 -26.035);
+Wire  0.1524 (5.715 -24.13) (5.08 -24.765);
+Wire  0.1524 (5.08 -26.035) (5.715 -26.67);
+Wire  0.1524 (6.985 -26.67) (5.715 -26.67);
+Wire  0.1524 (-1.905 -24.13) (-0.635 -24.13) (0 -24.765) (0 -26.035) \
+      (-0.635 -26.67);
+Wire  0.1524 (0 -24.765) (0.635 -24.13) (1.905 -24.13) (2.54 -24.765) \
+      (2.54 -26.035) (1.905 -26.67) (0.635 -26.67) (0 -26.035);
+Wire  0.1524 (-5.08 -24.765) (-4.445 -24.13) (-3.175 -24.13) (-2.54 -24.765) \
+      (-2.54 -26.035) (-3.175 -26.67) (-4.445 -26.67) (-5.08 -26.035);
+Wire  0.1524 (-1.905 -24.13) (-2.54 -24.765);
+Wire  0.1524 (-2.54 -26.035) (-1.905 -26.67);
+Wire  0.1524 (-0.635 -26.67) (-1.905 -26.67);
+Wire  0.1524 (-9.525 -24.13) (-8.255 -24.13) (-7.62 -24.765) (-7.62 -26.035) \
+      (-8.255 -26.67);
+Wire  0.1524 (-7.62 -24.765) (-6.985 -24.13) (-5.715 -24.13) (-5.08 -24.765) \
+      (-5.08 -26.035) (-5.715 -26.67) (-6.985 -26.67) (-7.62 -26.035);
+Wire  0.1524 (-12.7 -24.765) (-12.065 -24.13) (-10.795 -24.13) (-10.16 -24.765) \
+      (-10.16 -26.035) (-10.795 -26.67) (-12.065 -26.67) (-12.7 -26.035);
+Wire  0.1524 (-9.525 -24.13) (-10.16 -24.765);
+Wire  0.1524 (-10.16 -26.035) (-9.525 -26.67);
+Wire  0.1524 (-8.255 -26.67) (-9.525 -26.67);
+Wire  0.1524 (-17.145 -24.13) (-15.875 -24.13) (-15.24 -24.765) (-15.24 -26.035) \
+      (-15.875 -26.67);
+Wire  0.1524 (-15.24 -24.765) (-14.605 -24.13) (-13.335 -24.13) (-12.7 -24.765) \
+      (-12.7 -26.035) (-13.335 -26.67) (-14.605 -26.67) (-15.24 -26.035);
+Wire  0.1524 (-17.78 -24.765) (-17.78 -26.035);
+Wire  0.1524 (-17.145 -24.13) (-17.78 -24.765);
+Wire  0.1524 (-17.78 -26.035) (-17.145 -26.67);
+Wire  0.1524 (-15.875 -26.67) (-17.145 -26.67);
+Wire  0.1524 (17.78 -24.765) (18.415 -24.13) (19.685 -24.13) (20.32 -24.765) \
+      (20.32 -26.035) (19.685 -26.67) (18.415 -26.67) (17.78 -26.035);
+Change Drill 1.016;Pad 'V3.3' long 0 R90 (-16.51 -25.4);
+Change Drill 1.016;Pad 'GND' long 0 R90 (-13.97 -25.4);
+Change Drill 1.016;Pad 'TX' long 0 R90 (-11.43 -25.4);
+Change Drill 1.016;Pad 'RX' long 0 R90 (-8.89 -25.4);
+Change Drill 1.016;Pad 'D8' long 0 R90 (-6.35 -25.4);
+Change Drill 1.016;Pad 'D7' long 0 R90 (-3.81 -25.4);
+Change Drill 1.016;Pad 'D6' long 0 R90 (-1.27 -25.4);
+Change Drill 1.016;Pad 'D5' long 0 R90 (1.27 -25.4);
+Change Drill 1.016;Pad 'GND@1' long 0 R90 (3.81 -25.4);
+Change Drill 1.016;Pad 'V3.3@1' long 0 R90 (6.35 -25.4);
+Change Drill 1.016;Pad 'D4' long 0 R90 (8.89 -25.4);
+Change Drill 1.016;Pad 'D3' long 0 R90 (11.43 -25.4);
+Change Drill 1.016;Pad 'D2' long 0 R90 (13.97 -25.4);
+Change Drill 1.016;Pad 'D1' long 0 R90 (16.51 -25.4);
+Change Drill 1.016;Pad 'D0' long 0 R90 (19.05 -25.4);
+Layer 27;
+Change Size 1.27;
+Change Ratio 8;
+Change Align bottom left;
+Text '>VALUE' R0 (-17.78 -28.575);
+Layer 51;
+Rect R0 (16.256 -25.654) (16.764 -25.146);
+Layer 51;
+Rect R0 (13.716 -25.654) (14.224 -25.146);
+Layer 51;
+Rect R0 (11.176 -25.654) (11.684 -25.146);
+Layer 51;
+Rect R0 (8.636 -25.654) (9.144 -25.146);
+Layer 51;
+Rect R0 (6.096 -25.654) (6.604 -25.146);
+Layer 51;
+Rect R0 (3.556 -25.654) (4.064 -25.146);
+Layer 51;
+Rect R0 (1.016 -25.654) (1.524 -25.146);
+Layer 51;
+Rect R0 (-1.524 -25.654) (-1.016 -25.146);
+Layer 51;
+Rect R0 (-4.064 -25.654) (-3.556 -25.146);
+Layer 51;
+Rect R0 (-6.604 -25.654) (-6.096 -25.146);
+Layer 51;
+Rect R0 (-9.144 -25.654) (-8.636 -25.146);
+Layer 51;
+Rect R0 (-11.684 -25.654) (-11.176 -25.146);
+Layer 51;
+Rect R0 (-14.224 -25.654) (-13.716 -25.146);
+Layer 51;
+Rect R0 (-16.764 -25.654) (-16.256 -25.146);
+Layer 51;
+Rect R0 (18.796 -25.654) (19.304 -25.146);
+Layer 21;
+Wire  0.127 (-22.86 1.27) (-22.86 -26.67);
+Wire  0.127 (-22.86 1.27) (25.4 1.27) (25.4 -26.67) (-22.86 -26.67);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Change Font vector;
+Text 'GND' R90 (-13.97 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'GND' R90 (-3.81 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'GND' R90 (3.81 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'GND' R90 (-13.97 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'V3.3' R90 (-6.35 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'V3.3' R90 (6.35 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'V3.3' R90 (-16.51 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'V5' R90 (-16.51 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'RST' R90 (-11.43 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'EN' R90 (-8.89 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'CLK' R90 (-1.27 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'SD0' R90 (1.27 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'CMD' R90 (3.81 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'SD1' R90 (6.35 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'SD2' R90 (8.89 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'SD3' R90 (11.43 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'RSV' R90 (13.97 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'RSV' R90 (16.51 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center right;
+Text 'A0' R90 (19.05 -2.54);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'D0' R90 (19.05 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'D1' R90 (16.51 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'D2' R90 (13.97 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'D3' R90 (11.43 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'D4' R90 (8.89 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'D5' R90 (1.27 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'D6' R90 (-1.27 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'D7' R90 (-3.81 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'D8' R90 (-6.35 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'RX' R90 (-8.89 -22.86);
+Layer 21;
+Change Size 1.27;
+Change Align center left;
+Text 'TX' R90 (-11.43 -22.86);
+
+Edit 'ESP8266.dev';
+Prefix '';
+Description 'ESP8266 Wifi Module Breakout';
+Value off;
+Add ESP8266 'G$1' next 0 (10.16 -12.7);
+Package 'ESP8266' '';
+Technology '';
+Connect  'G$1.A0' 'A0'  'G$1.CLK' 'CLK'  'G$1.CMD' 'CMD'  'G$1.D0' 'D0'  'G$1.D1' 'D1' \
+         'G$1.D2' 'D2'  'G$1.D3' 'D3'  'G$1.D4' 'D4'  'G$1.D5' 'D5'  'G$1.D6' 'D6'  'G$1.D7' 'D7' \
+         'G$1.D8' 'D8'  'G$1.EN' 'EN'  'G$1.GND' 'GND'  'G$1.GND@1' 'GND@1'  'G$1.GND@2' 'GND@2'  'G$1.GND@3' 'GND@3' \
+         'G$1.RST' 'RST'  'G$1.RSV' 'RSV'  'G$1.RSV@1' 'RSV@1'  'G$1.RX' 'RX'  'G$1.SD0' 'SD0'  'G$1.SD1' 'SD1' \
+         'G$1.SD2' 'SD2'  'G$1.SD3' 'SD3'  'G$1.TX' 'TX'  'G$1.V3.3' 'V3.3'  'G$1.V3.3@1' 'V3.3@1'  'G$1.V3.3@2' 'V3.3@2' \
+         'G$1.V5' 'V5';
+Grid inch;
+Edit ;
